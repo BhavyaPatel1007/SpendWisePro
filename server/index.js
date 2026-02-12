@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 // }));
 
 app.use(cors({
-    origin: "https://spend-wise-pro.vercel.app",
+    origin: process.env.FRONTEND_URL,
     credentials: true
 }));
 
